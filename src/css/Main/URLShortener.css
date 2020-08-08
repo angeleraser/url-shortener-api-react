@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
   top: -90px;
   padding: 25px;
-  max-width: 480px;
+  max-width: calc(100% - 48px);
 }
 
 .url-shortener input,
