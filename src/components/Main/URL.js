@@ -27,7 +27,7 @@ const URL = ({ destination, shortURL, id, copied }) => {
         target="_blank"
         rel="noopener noreferrer"
         href={destination}
-        className="w-full h2 font-medium">
+        className="h2 font-medium">
         {destination}
       </a>
       <a
