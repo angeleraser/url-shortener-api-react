@@ -39,7 +39,7 @@
   background-color: var(--dark-violet-primary);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .url-item {
     flex-direction: row;
     padding: 14px 24px;
