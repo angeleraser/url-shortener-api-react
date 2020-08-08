@@ -1,0 +1,36 @@
+.boost-your-links {
+  background-color: var(--dark-violet-primary);
+  position: absolute;
+  padding: 90px 24px;
+  bottom: 0;
+}
+.boost-your-links h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--white-text);
+  z-index: 20;
+}
+.boost-your-links .base-button {
+  max-width: 198px;
+  z-index: 20;
+}
+.boost-your-links .bg-pattern {
+  background-image: url(../../images/bg-boost-mobile.svg);
+}
+@media screen and (min-width: 1024px) {
+  .boost-your-links {
+    padding: 64px 0 50px;
+  }
+
+  .boost-your-links h1 {
+    font-size: 32px;
+  }
+
+  .boost-your-links .base-button {
+    max-width: 202px;
+  }
+
+  .boost-your-links .bg-pattern {
+    background-image: url(../../images/bg-boost-desktop.svg);
+  }
+}

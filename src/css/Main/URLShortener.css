@@ -1,0 +1,103 @@
+.url-shortener {
+  background-color: var(--dark-violet-primary);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  top: -90px;
+  padding: 25px;
+  max-width: 480px;
+}
+
+.url-shortener input,
+.url-shortener button {
+  border-radius: 8px;
+  padding: 10px 0;
+  outline: none;
+}
+
+.url-shortener button {
+  background-color: var(--cyan-primary);
+  color: var(--white-text);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 16px;
+  transition: transform 0.3s;
+}
+.url-shortener button:hover {
+  background-color: var(--cyan-secondary);
+}
+.url-shortener button.loading {
+  cursor: not-allowed;
+  background-color: var(--cyan-secondary);
+}
+.url-shortener input {
+  font-size: 18px;
+  text-indent: 20px;
+  color: var(--dark-violet-primary);
+}
+
+.url-shortener input.invalid {
+  border: 2px solid var(--red-secondary);
+  color: var(--red-secondary);
+}
+
+.url-shortener input.invalid + .invalid-msg {
+  display: block;
+  content: "Please add a valid URL";
+}
+
+.url-shortener .invalid-msg,
+.url-shortener .failed-msg {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--red-secondary);
+  margin-top: 3px;
+  align-self: flex-start;
+}
+.url-shortener .invalid-msg {
+  display: none;
+}
+.url-shortener input:invalid {
+  border: 3px solid var(--red-secondary);
+}
+
+.url-shortener button:active {
+  transform: scale(0.95);
+}
+
+.url-shortener input:invalid + .invalid-msg {
+  display: inline-block;
+  content: "Please add a link";
+}
+
+.url-shortener input:invalid::placeholder {
+  color: var(--red-secondary);
+}
+
+@media screen and (min-width: 1440px) {
+  .url-shortener {
+    padding: 50px 62px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: calc(100% - 328px);
+  }
+  .url-shortener button {
+    margin-top: 0;
+    max-width: 190px;
+  }
+  .url-shortener input {
+    max-width: 770px;
+  }
+  .url-shortener input,
+  .url-shortener button {
+    padding: 15px;
+  }
+  .url-shortener .invalid-msg, .url-shortener .failed-msg {
+    order: 3;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 25px;
+  }
+}

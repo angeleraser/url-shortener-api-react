@@ -1,0 +1,11 @@
+.main {
+  padding: 132px 24px 350px;
+  background-color: var(--gray-neutral-secondary);
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    padding: 114px 162px 370px;
+  }
+}

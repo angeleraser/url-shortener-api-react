@@ -1,0 +1,64 @@
+.url-item {
+  padding: 15px 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  max-width: 1112px;
+}
+
+.url-item a.h2 {
+  padding-bottom: 12px;
+  color: var(--dark-violet-primary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--gray-neutral);
+}
+
+.url-item a.h2,
+.url-item a.shortURL {
+  padding-left: 16px;
+  margin-bottom: 12px;
+}
+
+.url-item a.shortURL {
+  color: var(--cyan-primary);
+}
+
+.url-item button {
+  padding: 12px 0;
+  background-color: var(--cyan-primary);
+  color: var(--white-text);
+  max-width: calc(100% - 32px);
+  border-radius: 5px;
+  outline: none;
+}
+
+.url-item button:hover {
+  background-color: var(--cyan-secondary);
+}
+
+.url-item button.is-copied {
+  background-color: var(--dark-violet-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .url-item {
+    flex-direction: row;
+    padding: 14px 24px;
+  }
+  .url-item a.h2,
+  .url-item a.shortURL {
+    padding-left: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+  }
+  .url-item a.shortURL {
+    width: auto;
+    margin: 0 25px 0 auto;
+    align-self: center;
+  }
+  .url-item button {
+    max-width: 106px;
+    padding: 10px 0;
+  }
+}

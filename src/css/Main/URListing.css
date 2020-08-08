@@ -1,0 +1,14 @@
+.url-listing {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 23px;
+  padding-bottom: 128px;
+  max-width: 480px;
+  place-items: center;
+}
+
+@media screen and (min-width:1024px) {
+  .url-listing {
+    max-width: 100%;
+  }
+}
