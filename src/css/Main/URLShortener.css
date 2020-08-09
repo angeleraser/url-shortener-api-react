@@ -74,6 +74,11 @@
   color: var(--red-secondary);
 }
 
+@media screen and (min-width:480px){
+  .url-shortener{
+    max-width: 480px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .url-shortener {
     padding: 50px 62px;

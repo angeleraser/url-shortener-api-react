@@ -19,7 +19,7 @@ const URLShortener = () => {
       id,
     };
   };
-  const createNewShorrURL = () => {
+  const createNewShortURL = () => {
     getShortedLink(inputValue)
       .then((data) => {
         addToList({
@@ -49,7 +49,7 @@ const URLShortener = () => {
         if (isValid()) {
           setLoading(true);
           setInputValue("");
-          createNewShorrURL();
+          createNewShortURL();
         } else {
           setValidation(true);
         }
